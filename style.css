@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    height: 100%;
+}
+
+.hero {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.message-body {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.images-section {
+    margin: 20px 0;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.love-btn {
+    padding: 15px 30px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.4s;
+    margin-top: 20px;
+}
+
+.love-btn:hover {
+    transform: scale(1.1);
+    background: #e55b50;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+.message-content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+.message-content button {
+    padding: 10px 25px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.message-content button:hover {
+    background: #e55b50;
+}
